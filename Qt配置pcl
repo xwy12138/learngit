@@ -1,0 +1,16 @@
+1.安装pcl库：
+sudo add-apt-repository ppa:v-launchpad-jochen-sprickerhof-de/pcl  
+sudo apt-get update  
+sudo apt-get install libpcl-dev
+2.在Qt中的.pro中配置以下路径：
+INCLUDEPATH += /usr/include/eigen3
+
+INCLUDEPATH += /usr/include/vtk-6.2
+LIBS += /usr/lib/x86_64-linux-gnu/libvtk*.so
+
+INCLUDEPATH += /usr/inclde/boost
+LIBS += /usr/lib/x86_64-linux-gnu/libboost_*.so
+
+INCLUDEPATH += /usr/include/pcl-1.7
+LIBS += /usr/lib/x86_64-linux-gnu/libpcl_*.so
+
